@@ -12,14 +12,13 @@ Screenshots:
 
 - some recent tweets with sentiment score and background color is green for positive sentiment value and red for negative and black for neutral sentiment: 
 
- ![](images/tweets.png)
  
  
 - short term/Live graph:
 
-  ![](images/liveGraph.png)
+  
   
   
  - long term graph:
  
-  ![](images/longTermGraph.png)
+ 
