@@ -11,14 +11,15 @@ You can run this application at locally.First run twitterStream.py which will re
 Screenshots:
 
 - some recent tweets with sentiment score and background color is green for positive sentiment value and red for negative and black for neutral sentiment: 
-
+  
+  ![](images/tweet.png)
  
  
 - short term/Live graph:
 
-  
+  ![](images/liveGraph.png)  
   
   
  - long term graph:
  
- 
+    ![](images/longTermGraph.png)
