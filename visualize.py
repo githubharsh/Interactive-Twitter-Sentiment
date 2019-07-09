@@ -33,7 +33,7 @@ app.layout = html.Div(
         html.Div(className='row', children=[html.Div(dcc.Graph(id='liveGraph', animate=False), className='col s12 m6 l6'),
                                             html.Div(dcc.Graph(id='longTerm', animate=False), className='col s12 m6 l6')],style={'backgroundColor': app_colors['blue'],},),
 
-        html.Div(className='row', children=[html.Div(id="recentTweetsTable", className='col s12 m6 l6'),]),
+        html.Div(className='row', children=[html.Div(id="recentTweetsTable", className='col s12'),]),
         dcc.Interval(
             id='liveGraphUpdate',
             interval=1*1000
@@ -177,6 +177,16 @@ def updateGraph(sentiment_term):
             fl.write(str(e))
             fl.write('\n')
 
+external_css = ["https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"]
+for css in external_css:
+    app.css.append_css({"external_url": css})
 
+
+external_js = ['https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js',
+               'https://pythonprogramming.net/static/socialsentiment/googleanalytics.js']
+for js in external_js:
+    app.scripts.append_script({'external_url': js})
+            
+            
 if __name__ == '__main__':
     app.run_server(debug=True)
