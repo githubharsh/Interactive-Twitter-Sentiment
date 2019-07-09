@@ -22,14 +22,11 @@ def table():
 table()
 
 #consumer key, consumer secret, access token, access secret.
-# ckey=""
-# csecret=""
-# atoken=""
-# asecret=""
-conKey="Oqx7DvMt5zMsrJpvDf42KKXcx"
-conSecret="5HWYtEhukao0HqL32jrdfOW8k1SnADEm4Xp9J52NfaGWlfjm0R"
-accToken="1067032473492746240-BIdBkYBZz1GdV75GepMLNLacheCkhe"
-accSecret="2Td4emJmjGnQNb9xrxpC7YUKPzjWi2L6LEy4fTFv0QKga"
+
+conKey=""
+conSecret=""
+accToken=""
+accSecret=""
 
 class listener(StreamListener):
 
